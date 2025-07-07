@@ -350,6 +350,7 @@ export const SearchRelevanceApp = ({
   // Move all useState declarations to the top
   const [toasts, setToasts] = useState<Toast[]>([]);
   const [toastRightSide, setToastRightSide] = useState<boolean>(true);
+  const [savedConfiguration, setSavedConfiguration] = useState('');
 
   const getNavGroupEnabled = chrome.navGroup.getNavGroupEnabled();
 
@@ -406,6 +407,7 @@ export const SearchRelevanceApp = ({
               <Route
                 path={['/']}
                 render={(props) => {
+                  setSavedConfiguration(props.match.params.id);
                   return (
                     <QueryCompareHome
                       application={application}
@@ -420,6 +422,7 @@ export const SearchRelevanceApp = ({
                       dataSourceEnabled={dataSourceEnabled}
                       dataSourceManagement={dataSourceManagement}
                       setActionMenu={setActionMenu}
+                      savedConfiguration={props.match.params.id}
                     />
                   );
                 }}

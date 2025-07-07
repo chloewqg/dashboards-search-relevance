@@ -19,6 +19,8 @@ export const ServiceEndpoints = Object.freeze({
   GetSingleSearchResults: `${SEARCH_RELEVANCE_WORKBENCH_BASE_PATH}/single_search`,
   GetStats: `${SEARCH_RELEVANCE_WORKBENCH_BASE_PATH}/stats`,
   GetClusterSettings: `${SEARCH_RELEVANCE_WORKBENCH_BASE_PATH}/cluster_settings`,
+  GetDocument: `${SEARCH_RELEVANCE_WORKBENCH_BASE_PATH}/doc`,
+  GetSavedConfiguration: `${SEARCH_RELEVANCE_WORKBENCH_BASE_PATH}/search/savedConfiguration`,
 
   // Search Relevance node APIs
   QuerySets: `${SEARCH_RELEVANCE_WORKBENCH_BASE_PATH}/query_sets`,

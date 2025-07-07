@@ -1,0 +1,1738 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchRelevanceApp renders SearchRelevanceApp with new experience when enabled 1`] = `
+<SearchRelevanceApp
+  application={
+    Object {
+      "navigateToApp": [MockFunction],
+    }
+  }
+  chrome={
+    Object {
+      "navGroup": Object {
+        "getNavGroupEnabled": [MockFunction] {
+          "calls": Array [
+            Array [],
+            Array [],
+          ],
+          "results": Array [
+            Object {
+              "type": "return",
+              "value": false,
+            },
+            Object {
+              "type": "return",
+              "value": false,
+            },
+          ],
+        },
+      },
+      "setBreadcrumbs": [MockFunction],
+    }
+  }
+  dataSourceEnabled={false}
+  dataSourceManagement={Object {}}
+  http={
+    Object {
+      "get": [MockFunction],
+      "post": [MockFunction],
+    }
+  }
+  navigation={Object {}}
+  notifications={
+    Object {
+      "toasts": Object {
+        "add": [MockFunction],
+        "addDanger": [MockFunction],
+        "addSuccess": [MockFunction],
+        "addWarning": [MockFunction],
+      },
+    }
+  }
+  savedObjects={Object {}}
+  setActionMenu={[MockFunction]}
+  uiSettings={
+    Object {
+      "get": [MockFunction] {
+        "calls": Array [
+          Array [
+            "search-relevance:experimental_workbench_ui_enabled",
+          ],
+        ],
+        "results": Array [
+          Object {
+            "type": "return",
+            "value": true,
+          },
+        ],
+      },
+    }
+  }
+>
+  <HashRouter>
+    <Router
+      history={
+        Object {
+          "action": "POP",
+          "block": [Function],
+          "createHref": [Function],
+          "go": [Function],
+          "goBack": [Function],
+          "goForward": [Function],
+          "length": 1,
+          "listen": [Function],
+          "location": Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          },
+          "push": [Function],
+          "replace": [Function],
+        }
+      }
+    >
+      <I18nProvider>
+        <IntlProvider
+          defaultLocale="en"
+          formats={
+            Object {
+              "date": Object {
+                "full": Object {
+                  "day": "numeric",
+                  "month": "long",
+                  "weekday": "long",
+                  "year": "numeric",
+                },
+                "long": Object {
+                  "day": "numeric",
+                  "month": "long",
+                  "year": "numeric",
+                },
+                "medium": Object {
+                  "day": "numeric",
+                  "month": "short",
+                  "year": "numeric",
+                },
+                "short": Object {
+                  "day": "numeric",
+                  "month": "numeric",
+                  "year": "2-digit",
+                },
+              },
+              "number": Object {
+                "currency": Object {
+                  "style": "currency",
+                },
+                "percent": Object {
+                  "style": "percent",
+                },
+              },
+              "relative": Object {
+                "days": Object {
+                  "units": "day",
+                },
+                "hours": Object {
+                  "units": "hour",
+                },
+                "minutes": Object {
+                  "units": "minute",
+                },
+                "months": Object {
+                  "units": "month",
+                },
+                "seconds": Object {
+                  "units": "second",
+                },
+                "years": Object {
+                  "units": "year",
+                },
+              },
+              "time": Object {
+                "full": Object {
+                  "hour": "numeric",
+                  "minute": "numeric",
+                  "second": "numeric",
+                  "timeZoneName": "short",
+                },
+                "long": Object {
+                  "hour": "numeric",
+                  "minute": "numeric",
+                  "second": "numeric",
+                  "timeZoneName": "short",
+                },
+                "medium": Object {
+                  "hour": "numeric",
+                  "minute": "numeric",
+                  "second": "numeric",
+                },
+                "short": Object {
+                  "hour": "numeric",
+                  "minute": "numeric",
+                },
+              },
+            }
+          }
+          locale="en"
+          messages={Object {}}
+          textComponent={Symbol(react.fragment)}
+        >
+          <PseudoLocaleWrapper>
+            <SearchRelevanceContextProvider>
+              <withRouter(SearchRelevancePage)
+                application={
+                  Object {
+                    "navigateToApp": [MockFunction],
+                  }
+                }
+                chrome={
+                  Object {
+                    "navGroup": Object {
+                      "getNavGroupEnabled": [MockFunction] {
+                        "calls": Array [
+                          Array [],
+                          Array [],
+                        ],
+                        "results": Array [
+                          Object {
+                            "type": "return",
+                            "value": false,
+                          },
+                          Object {
+                            "type": "return",
+                            "value": false,
+                          },
+                        ],
+                      },
+                    },
+                    "setBreadcrumbs": [MockFunction],
+                  }
+                }
+                dataSourceEnabled={false}
+                dataSourceManagement={Object {}}
+                http={
+                  Object {
+                    "get": [MockFunction],
+                    "post": [MockFunction],
+                  }
+                }
+                navigation={Object {}}
+                notifications={
+                  Object {
+                    "toasts": Object {
+                      "add": [MockFunction],
+                      "addDanger": [MockFunction],
+                      "addSuccess": [MockFunction],
+                      "addWarning": [MockFunction],
+                    },
+                  }
+                }
+                parentBreadCrumbs={
+                  Array [
+                    Object {
+                      "href": "#",
+                      "text": "Search Relevance",
+                    },
+                  ]
+                }
+                savedObjects={Object {}}
+                setActionMenu={[MockFunction]}
+              >
+                <SearchRelevancePage
+                  application={
+                    Object {
+                      "navigateToApp": [MockFunction],
+                    }
+                  }
+                  chrome={
+                    Object {
+                      "navGroup": Object {
+                        "getNavGroupEnabled": [MockFunction] {
+                          "calls": Array [
+                            Array [],
+                            Array [],
+                          ],
+                          "results": Array [
+                            Object {
+                              "type": "return",
+                              "value": false,
+                            },
+                            Object {
+                              "type": "return",
+                              "value": false,
+                            },
+                          ],
+                        },
+                      },
+                      "setBreadcrumbs": [MockFunction],
+                    }
+                  }
+                  dataSourceEnabled={false}
+                  dataSourceManagement={Object {}}
+                  history={
+                    Object {
+                      "action": "POP",
+                      "block": [Function],
+                      "createHref": [Function],
+                      "go": [Function],
+                      "goBack": [Function],
+                      "goForward": [Function],
+                      "length": 1,
+                      "listen": [Function],
+                      "location": Object {
+                        "hash": "",
+                        "pathname": "/",
+                        "search": "",
+                        "state": undefined,
+                      },
+                      "push": [Function],
+                      "replace": [Function],
+                    }
+                  }
+                  http={
+                    Object {
+                      "get": [MockFunction],
+                      "post": [MockFunction],
+                    }
+                  }
+                  location={
+                    Object {
+                      "hash": "",
+                      "pathname": "/",
+                      "search": "",
+                      "state": undefined,
+                    }
+                  }
+                  match={
+                    Object {
+                      "isExact": true,
+                      "params": Object {},
+                      "path": "/",
+                      "url": "/",
+                    }
+                  }
+                  navigation={Object {}}
+                  notifications={
+                    Object {
+                      "toasts": Object {
+                        "add": [MockFunction],
+                        "addDanger": [MockFunction],
+                        "addSuccess": [MockFunction],
+                        "addWarning": [MockFunction],
+                      },
+                    }
+                  }
+                  parentBreadCrumbs={
+                    Array [
+                      Object {
+                        "href": "#",
+                        "text": "Search Relevance",
+                      },
+                    ]
+                  }
+                  savedObjects={Object {}}
+                  setActionMenu={[MockFunction]}
+                >
+                  <EuiPage
+                    restrictWidth="100%"
+                  >
+                    <div
+                      className="euiPage euiPage--paddingMedium euiPage--grow euiPage--restrictWidth-custom"
+                      style={
+                        Object {
+                          "maxWidth": "100%",
+                        }
+                      }
+                    >
+                      <EuiPageSideBar
+                        style={
+                          Object {
+                            "minWidth": 200,
+                          }
+                        }
+                      >
+                        <div
+                          className="euiPageSideBar"
+                          style={
+                            Object {
+                              "minWidth": 200,
+                            }
+                          }
+                        >
+                          <EuiSideNav
+                            items={
+                              Array [
+                                Object {
+                                  "id": "Search Relevance Workbench",
+                                  "items": Array [
+                                    Object {
+                                      "forceOpen": true,
+                                      "id": "Experiments",
+                                      "isSelected": true,
+                                      "items": Array [
+                                        Object {
+                                          "id": "Single Query Comparison",
+                                          "isSelected": false,
+                                          "name": "Single Query Comparison",
+                                          "onClick": [Function],
+                                        },
+                                        Object {
+                                          "id": "Query Set Comparison",
+                                          "isSelected": false,
+                                          "name": "Query Set Comparison",
+                                          "onClick": [Function],
+                                        },
+                                        Object {
+                                          "id": "Search Evaluation",
+                                          "isSelected": false,
+                                          "name": "Search Evaluation",
+                                          "onClick": [Function],
+                                        },
+                                        Object {
+                                          "id": "Hybrid Optimizer",
+                                          "isSelected": false,
+                                          "name": "Hybrid Optimizer",
+                                          "onClick": [Function],
+                                        },
+                                      ],
+                                      "name": "Experiments",
+                                      "onClick": [Function],
+                                    },
+                                    Object {
+                                      "id": "Query Sets",
+                                      "isSelected": false,
+                                      "name": "Query Sets",
+                                      "onClick": [Function],
+                                    },
+                                    Object {
+                                      "id": "Search Configurations",
+                                      "isSelected": false,
+                                      "name": "Search Configurations",
+                                      "onClick": [Function],
+                                    },
+                                    Object {
+                                      "id": "Judgments",
+                                      "isSelected": false,
+                                      "name": "Judgments",
+                                      "onClick": [Function],
+                                    },
+                                  ],
+                                  "name": "Search Relevance Workbench",
+                                  "renderItem": [Function],
+                                },
+                              ]
+                            }
+                            mobileBreakpoints={
+                              Array [
+                                "xs",
+                                "s",
+                              ]
+                            }
+                            style={
+                              Object {
+                                "width": 200,
+                              }
+                            }
+                          >
+                            <EuiShowFor
+                              sizes={
+                                Array [
+                                  "xs",
+                                  "s",
+                                ]
+                              }
+                            />
+                            <EuiHideFor
+                              sizes={
+                                Array [
+                                  "xs",
+                                  "s",
+                                ]
+                              }
+                            >
+                              <nav
+                                className="euiSideNav"
+                                style={
+                                  Object {
+                                    "width": 200,
+                                  }
+                                }
+                              >
+                                <div
+                                  className="euiSideNav__content euiSideNav__contentMobile-xs euiSideNav__contentMobile-s"
+                                  id="random_html_id"
+                                >
+                                  <EuiSideNavItem
+                                    childrenOnly={false}
+                                    depth={0}
+                                    isOpen={true}
+                                    isParent={true}
+                                    items={
+                                      Array [
+                                        <EuiSideNavItem
+                                          childrenOnly={false}
+                                          depth={1}
+                                          isOpen={true}
+                                          isParent={true}
+                                          isSelected={true}
+                                          items={
+                                            Array [
+                                              <EuiSideNavItem
+                                                childrenOnly={false}
+                                                depth={2}
+                                                isOpen={false}
+                                                isParent={false}
+                                                isSelected={false}
+                                                onClick={[Function]}
+                                              >
+                                                Single Query Comparison
+                                              </EuiSideNavItem>,
+                                              <EuiSideNavItem
+                                                childrenOnly={false}
+                                                depth={2}
+                                                isOpen={false}
+                                                isParent={false}
+                                                isSelected={false}
+                                                onClick={[Function]}
+                                              >
+                                                Query Set Comparison
+                                              </EuiSideNavItem>,
+                                              <EuiSideNavItem
+                                                childrenOnly={false}
+                                                depth={2}
+                                                isOpen={false}
+                                                isParent={false}
+                                                isSelected={false}
+                                                onClick={[Function]}
+                                              >
+                                                Search Evaluation
+                                              </EuiSideNavItem>,
+                                              <EuiSideNavItem
+                                                childrenOnly={false}
+                                                depth={2}
+                                                isOpen={false}
+                                                isParent={false}
+                                                isSelected={false}
+                                                onClick={[Function]}
+                                              >
+                                                Hybrid Optimizer
+                                              </EuiSideNavItem>,
+                                            ]
+                                          }
+                                          onClick={[Function]}
+                                        >
+                                          Experiments
+                                        </EuiSideNavItem>,
+                                        <EuiSideNavItem
+                                          childrenOnly={false}
+                                          depth={1}
+                                          isOpen={false}
+                                          isParent={false}
+                                          isSelected={false}
+                                          onClick={[Function]}
+                                        >
+                                          Query Sets
+                                        </EuiSideNavItem>,
+                                        <EuiSideNavItem
+                                          childrenOnly={false}
+                                          depth={1}
+                                          isOpen={false}
+                                          isParent={false}
+                                          isSelected={false}
+                                          onClick={[Function]}
+                                        >
+                                          Search Configurations
+                                        </EuiSideNavItem>,
+                                        <EuiSideNavItem
+                                          childrenOnly={false}
+                                          depth={1}
+                                          isOpen={false}
+                                          isParent={false}
+                                          isSelected={false}
+                                          onClick={[Function]}
+                                        >
+                                          Judgments
+                                        </EuiSideNavItem>,
+                                      ]
+                                    }
+                                    key="Search Relevance Workbench"
+                                    renderItem={[Function]}
+                                  >
+                                    <div
+                                      className="euiSideNavItem euiSideNavItem--root euiSideNavItem--hasChildItems"
+                                    >
+                                      <renderItem
+                                        className="euiSideNavItemButton"
+                                      >
+                                        <EuiTitle
+                                          size="xs"
+                                        >
+                                          <h3
+                                            className="euiTitle euiTitle--xsmall"
+                                          >
+                                            Search Relevance Workbench
+                                          </h3>
+                                        </EuiTitle>
+                                        <EuiSpacer>
+                                          <div
+                                            className="euiSpacer euiSpacer--l"
+                                          />
+                                        </EuiSpacer>
+                                      </renderItem>
+                                      <div
+                                        className="euiSideNavItem__items"
+                                      >
+                                        <EuiSideNavItem
+                                          childrenOnly={false}
+                                          depth={1}
+                                          isOpen={true}
+                                          isParent={true}
+                                          isSelected={true}
+                                          items={
+                                            Array [
+                                              <EuiSideNavItem
+                                                childrenOnly={false}
+                                                depth={2}
+                                                isOpen={false}
+                                                isParent={false}
+                                                isSelected={false}
+                                                onClick={[Function]}
+                                              >
+                                                Single Query Comparison
+                                              </EuiSideNavItem>,
+                                              <EuiSideNavItem
+                                                childrenOnly={false}
+                                                depth={2}
+                                                isOpen={false}
+                                                isParent={false}
+                                                isSelected={false}
+                                                onClick={[Function]}
+                                              >
+                                                Query Set Comparison
+                                              </EuiSideNavItem>,
+                                              <EuiSideNavItem
+                                                childrenOnly={false}
+                                                depth={2}
+                                                isOpen={false}
+                                                isParent={false}
+                                                isSelected={false}
+                                                onClick={[Function]}
+                                              >
+                                                Search Evaluation
+                                              </EuiSideNavItem>,
+                                              <EuiSideNavItem
+                                                childrenOnly={false}
+                                                depth={2}
+                                                isOpen={false}
+                                                isParent={false}
+                                                isSelected={false}
+                                                onClick={[Function]}
+                                              >
+                                                Hybrid Optimizer
+                                              </EuiSideNavItem>,
+                                            ]
+                                          }
+                                          key="Experiments"
+                                          onClick={[Function]}
+                                        >
+                                          <div
+                                            className="euiSideNavItem euiSideNavItem--trunk euiSideNavItem--hasChildItems"
+                                          >
+                                            <DefaultRenderItem
+                                              className="euiSideNavItemButton euiSideNavItemButton--isClickable euiSideNavItemButton-isSelected"
+                                              onClick={[Function]}
+                                            >
+                                              <button
+                                                className="euiSideNavItemButton euiSideNavItemButton--isClickable euiSideNavItemButton-isSelected"
+                                                onClick={[Function]}
+                                                type="button"
+                                              >
+                                                <span
+                                                  className="euiSideNavItemButton__content"
+                                                >
+                                                  <EuiInnerText>
+                                                    <span
+                                                      className="euiSideNavItemButton__label euiSideNavItemButton__label--truncated"
+                                                      title="Experiments"
+                                                    >
+                                                      Experiments
+                                                    </span>
+                                                  </EuiInnerText>
+                                                </span>
+                                              </button>
+                                            </DefaultRenderItem>
+                                            <div
+                                              className="euiSideNavItem__items"
+                                            >
+                                              <EuiSideNavItem
+                                                childrenOnly={false}
+                                                depth={2}
+                                                isOpen={false}
+                                                isParent={false}
+                                                isSelected={false}
+                                                key="Single Query Comparison"
+                                                onClick={[Function]}
+                                              >
+                                                <div
+                                                  className="euiSideNavItem euiSideNavItem--branch"
+                                                >
+                                                  <DefaultRenderItem
+                                                    className="euiSideNavItemButton euiSideNavItemButton--isClickable"
+                                                    onClick={[Function]}
+                                                  >
+                                                    <button
+                                                      className="euiSideNavItemButton euiSideNavItemButton--isClickable"
+                                                      onClick={[Function]}
+                                                      type="button"
+                                                    >
+                                                      <span
+                                                        className="euiSideNavItemButton__content"
+                                                      >
+                                                        <EuiInnerText>
+                                                          <span
+                                                            className="euiSideNavItemButton__label euiSideNavItemButton__label--truncated"
+                                                            title="Single Query Comparison"
+                                                          >
+                                                            Single Query Comparison
+                                                          </span>
+                                                        </EuiInnerText>
+                                                      </span>
+                                                    </button>
+                                                  </DefaultRenderItem>
+                                                </div>
+                                              </EuiSideNavItem>
+                                              <EuiSideNavItem
+                                                childrenOnly={false}
+                                                depth={2}
+                                                isOpen={false}
+                                                isParent={false}
+                                                isSelected={false}
+                                                key="Query Set Comparison"
+                                                onClick={[Function]}
+                                              >
+                                                <div
+                                                  className="euiSideNavItem euiSideNavItem--branch"
+                                                >
+                                                  <DefaultRenderItem
+                                                    className="euiSideNavItemButton euiSideNavItemButton--isClickable"
+                                                    onClick={[Function]}
+                                                  >
+                                                    <button
+                                                      className="euiSideNavItemButton euiSideNavItemButton--isClickable"
+                                                      onClick={[Function]}
+                                                      type="button"
+                                                    >
+                                                      <span
+                                                        className="euiSideNavItemButton__content"
+                                                      >
+                                                        <EuiInnerText>
+                                                          <span
+                                                            className="euiSideNavItemButton__label euiSideNavItemButton__label--truncated"
+                                                            title="Query Set Comparison"
+                                                          >
+                                                            Query Set Comparison
+                                                          </span>
+                                                        </EuiInnerText>
+                                                      </span>
+                                                    </button>
+                                                  </DefaultRenderItem>
+                                                </div>
+                                              </EuiSideNavItem>
+                                              <EuiSideNavItem
+                                                childrenOnly={false}
+                                                depth={2}
+                                                isOpen={false}
+                                                isParent={false}
+                                                isSelected={false}
+                                                key="Search Evaluation"
+                                                onClick={[Function]}
+                                              >
+                                                <div
+                                                  className="euiSideNavItem euiSideNavItem--branch"
+                                                >
+                                                  <DefaultRenderItem
+                                                    className="euiSideNavItemButton euiSideNavItemButton--isClickable"
+                                                    onClick={[Function]}
+                                                  >
+                                                    <button
+                                                      className="euiSideNavItemButton euiSideNavItemButton--isClickable"
+                                                      onClick={[Function]}
+                                                      type="button"
+                                                    >
+                                                      <span
+                                                        className="euiSideNavItemButton__content"
+                                                      >
+                                                        <EuiInnerText>
+                                                          <span
+                                                            className="euiSideNavItemButton__label euiSideNavItemButton__label--truncated"
+                                                            title="Search Evaluation"
+                                                          >
+                                                            Search Evaluation
+                                                          </span>
+                                                        </EuiInnerText>
+                                                      </span>
+                                                    </button>
+                                                  </DefaultRenderItem>
+                                                </div>
+                                              </EuiSideNavItem>
+                                              <EuiSideNavItem
+                                                childrenOnly={false}
+                                                depth={2}
+                                                isOpen={false}
+                                                isParent={false}
+                                                isSelected={false}
+                                                key="Hybrid Optimizer"
+                                                onClick={[Function]}
+                                              >
+                                                <div
+                                                  className="euiSideNavItem euiSideNavItem--branch"
+                                                >
+                                                  <DefaultRenderItem
+                                                    className="euiSideNavItemButton euiSideNavItemButton--isClickable"
+                                                    onClick={[Function]}
+                                                  >
+                                                    <button
+                                                      className="euiSideNavItemButton euiSideNavItemButton--isClickable"
+                                                      onClick={[Function]}
+                                                      type="button"
+                                                    >
+                                                      <span
+                                                        className="euiSideNavItemButton__content"
+                                                      >
+                                                        <EuiInnerText>
+                                                          <span
+                                                            className="euiSideNavItemButton__label euiSideNavItemButton__label--truncated"
+                                                            title="Hybrid Optimizer"
+                                                          >
+                                                            Hybrid Optimizer
+                                                          </span>
+                                                        </EuiInnerText>
+                                                      </span>
+                                                    </button>
+                                                  </DefaultRenderItem>
+                                                </div>
+                                              </EuiSideNavItem>
+                                            </div>
+                                          </div>
+                                        </EuiSideNavItem>
+                                        <EuiSideNavItem
+                                          childrenOnly={false}
+                                          depth={1}
+                                          isOpen={false}
+                                          isParent={false}
+                                          isSelected={false}
+                                          key="Query Sets"
+                                          onClick={[Function]}
+                                        >
+                                          <div
+                                            className="euiSideNavItem euiSideNavItem--trunk"
+                                          >
+                                            <DefaultRenderItem
+                                              className="euiSideNavItemButton euiSideNavItemButton--isClickable"
+                                              onClick={[Function]}
+                                            >
+                                              <button
+                                                className="euiSideNavItemButton euiSideNavItemButton--isClickable"
+                                                onClick={[Function]}
+                                                type="button"
+                                              >
+                                                <span
+                                                  className="euiSideNavItemButton__content"
+                                                >
+                                                  <EuiInnerText>
+                                                    <span
+                                                      className="euiSideNavItemButton__label euiSideNavItemButton__label--truncated"
+                                                      title="Query Sets"
+                                                    >
+                                                      Query Sets
+                                                    </span>
+                                                  </EuiInnerText>
+                                                </span>
+                                              </button>
+                                            </DefaultRenderItem>
+                                          </div>
+                                        </EuiSideNavItem>
+                                        <EuiSideNavItem
+                                          childrenOnly={false}
+                                          depth={1}
+                                          isOpen={false}
+                                          isParent={false}
+                                          isSelected={false}
+                                          key="Search Configurations"
+                                          onClick={[Function]}
+                                        >
+                                          <div
+                                            className="euiSideNavItem euiSideNavItem--trunk"
+                                          >
+                                            <DefaultRenderItem
+                                              className="euiSideNavItemButton euiSideNavItemButton--isClickable"
+                                              onClick={[Function]}
+                                            >
+                                              <button
+                                                className="euiSideNavItemButton euiSideNavItemButton--isClickable"
+                                                onClick={[Function]}
+                                                type="button"
+                                              >
+                                                <span
+                                                  className="euiSideNavItemButton__content"
+                                                >
+                                                  <EuiInnerText>
+                                                    <span
+                                                      className="euiSideNavItemButton__label euiSideNavItemButton__label--truncated"
+                                                      title="Search Configurations"
+                                                    >
+                                                      Search Configurations
+                                                    </span>
+                                                  </EuiInnerText>
+                                                </span>
+                                              </button>
+                                            </DefaultRenderItem>
+                                          </div>
+                                        </EuiSideNavItem>
+                                        <EuiSideNavItem
+                                          childrenOnly={false}
+                                          depth={1}
+                                          isOpen={false}
+                                          isParent={false}
+                                          isSelected={false}
+                                          key="Judgments"
+                                          onClick={[Function]}
+                                        >
+                                          <div
+                                            className="euiSideNavItem euiSideNavItem--trunk"
+                                          >
+                                            <DefaultRenderItem
+                                              className="euiSideNavItemButton euiSideNavItemButton--isClickable"
+                                              onClick={[Function]}
+                                            >
+                                              <button
+                                                className="euiSideNavItemButton euiSideNavItemButton--isClickable"
+                                                onClick={[Function]}
+                                                type="button"
+                                              >
+                                                <span
+                                                  className="euiSideNavItemButton__content"
+                                                >
+                                                  <EuiInnerText>
+                                                    <span
+                                                      className="euiSideNavItemButton__label euiSideNavItemButton__label--truncated"
+                                                      title="Judgments"
+                                                    >
+                                                      Judgments
+                                                    </span>
+                                                  </EuiInnerText>
+                                                </span>
+                                              </button>
+                                            </DefaultRenderItem>
+                                          </div>
+                                        </EuiSideNavItem>
+                                      </div>
+                                    </div>
+                                  </EuiSideNavItem>
+                                </div>
+                              </nav>
+                            </EuiHideFor>
+                          </EuiSideNav>
+                        </div>
+                      </EuiPageSideBar>
+                      <EuiPageBody>
+                        <div
+                          className="euiPageBody euiPageBody--borderRadiusNone"
+                        >
+                          <Switch>
+                            <Route
+                              computedMatch={
+                                Object {
+                                  "isExact": true,
+                                  "params": Object {},
+                                  "path": "/",
+                                  "url": "/",
+                                }
+                              }
+                              exact={true}
+                              location={
+                                Object {
+                                  "hash": "",
+                                  "pathname": "/",
+                                  "search": "",
+                                  "state": undefined,
+                                }
+                              }
+                              path="/"
+                              render={[Function]}
+                            >
+                              <withRouter(ExperimentListing)
+                                http={
+                                  Object {
+                                    "get": [MockFunction],
+                                    "post": [MockFunction],
+                                  }
+                                }
+                              >
+                                <ExperimentListing
+                                  history={
+                                    Object {
+                                      "action": "POP",
+                                      "block": [Function],
+                                      "createHref": [Function],
+                                      "go": [Function],
+                                      "goBack": [Function],
+                                      "goForward": [Function],
+                                      "length": 1,
+                                      "listen": [Function],
+                                      "location": Object {
+                                        "hash": "",
+                                        "pathname": "/",
+                                        "search": "",
+                                        "state": undefined,
+                                      },
+                                      "push": [Function],
+                                      "replace": [Function],
+                                    }
+                                  }
+                                  http={
+                                    Object {
+                                      "get": [MockFunction],
+                                      "post": [MockFunction],
+                                    }
+                                  }
+                                  location={
+                                    Object {
+                                      "hash": "",
+                                      "pathname": "/",
+                                      "search": "",
+                                      "state": undefined,
+                                    }
+                                  }
+                                  match={
+                                    Object {
+                                      "isExact": true,
+                                      "params": Object {},
+                                      "path": "/",
+                                      "url": "/",
+                                    }
+                                  }
+                                >
+                                  <EuiPageTemplate
+                                    paddingSize="l"
+                                    restrictWidth="100%"
+                                  >
+                                    <EuiPage
+                                      className="euiPageTemplate"
+                                      grow={true}
+                                      paddingSize="none"
+                                      style={
+                                        Object {
+                                          "minHeight": 460,
+                                        }
+                                      }
+                                    >
+                                      <div
+                                        className="euiPage euiPage--grow euiPageTemplate"
+                                        style={
+                                          Object {
+                                            "minHeight": 460,
+                                          }
+                                        }
+                                      >
+                                        <EuiPageBody>
+                                          <div
+                                            className="euiPageBody euiPageBody--borderRadiusNone"
+                                          >
+                                            <EuiPageContent
+                                              borderRadius="none"
+                                              color="plain"
+                                              hasBorder={false}
+                                              hasShadow={false}
+                                              paddingSize="none"
+                                            >
+                                              <EuiPanel
+                                                borderRadius="none"
+                                                className="euiPageContent euiPageContent--borderRadiusNone"
+                                                color="plain"
+                                                hasBorder={false}
+                                                hasShadow={false}
+                                                paddingSize="none"
+                                                role="main"
+                                              >
+                                                <div
+                                                  className="euiPanel euiPanel--borderRadiusNone euiPanel--plain euiPanel--noShadow euiPanel--noBorder euiPageContent euiPageContent--borderRadiusNone"
+                                                  role="main"
+                                                >
+                                                  <EuiPageContentBody
+                                                    paddingSize="l"
+                                                    restrictWidth="100%"
+                                                  >
+                                                    <div
+                                                      className="euiPageContentBody euiPage--paddingLarge euiPage--restrictWidth-custom"
+                                                      style={
+                                                        Object {
+                                                          "maxWidth": "100%",
+                                                        }
+                                                      }
+                                                    >
+                                                      <EuiPageHeader
+                                                        description="Manage your existing experiments and create new ones. Click on a card to create an experiment."
+                                                        pageTitle="Experiments"
+                                                      >
+                                                        <header
+                                                          className="euiPageHeader euiPageHeader--responsive euiPageHeader--center"
+                                                        >
+                                                          <EuiPageHeaderContent
+                                                            description="Manage your existing experiments and create new ones. Click on a card to create an experiment."
+                                                            pageTitle="Experiments"
+                                                            responsive={true}
+                                                          >
+                                                            <div
+                                                              className="euiPageHeaderContent"
+                                                            >
+                                                              <EuiFlexGroup
+                                                                alignItems="flexStart"
+                                                                className="euiPageHeaderContent__top"
+                                                                gutterSize="l"
+                                                                responsive={true}
+                                                              >
+                                                                <div
+                                                                  className="euiFlexGroup euiFlexGroup--gutterLarge euiFlexGroup--alignItemsFlexStart euiFlexGroup--directionRow euiFlexGroup--responsive euiPageHeaderContent__top"
+                                                                >
+                                                                  <EuiFlexItem>
+                                                                    <div
+                                                                      className="euiFlexItem"
+                                                                    >
+                                                                      <EuiTitle
+                                                                        size="l"
+                                                                      >
+                                                                        <h1
+                                                                          className="euiTitle euiTitle--large"
+                                                                        >
+                                                                          Experiments
+                                                                        </h1>
+                                                                      </EuiTitle>
+                                                                      <EuiSpacer>
+                                                                        <div
+                                                                          className="euiSpacer euiSpacer--l"
+                                                                        />
+                                                                      </EuiSpacer>
+                                                                      <EuiText
+                                                                        grow={false}
+                                                                      >
+                                                                        <div
+                                                                          className="euiText euiText--medium euiText--constrainedWidth"
+                                                                        >
+                                                                          <p>
+                                                                            Manage your existing experiments and create new ones. Click on a card to create an experiment.
+                                                                          </p>
+                                                                        </div>
+                                                                      </EuiText>
+                                                                    </div>
+                                                                  </EuiFlexItem>
+                                                                </div>
+                                                              </EuiFlexGroup>
+                                                            </div>
+                                                          </EuiPageHeaderContent>
+                                                        </header>
+                                                      </EuiPageHeader>
+                                                      <EuiSpacer
+                                                        size="m"
+                                                      >
+                                                        <div
+                                                          className="euiSpacer euiSpacer--m"
+                                                        />
+                                                      </EuiSpacer>
+                                                      <TemplateCards
+                                                        history={
+                                                          Object {
+                                                            "action": "POP",
+                                                            "block": [Function],
+                                                            "createHref": [Function],
+                                                            "go": [Function],
+                                                            "goBack": [Function],
+                                                            "goForward": [Function],
+                                                            "length": 1,
+                                                            "listen": [Function],
+                                                            "location": Object {
+                                                              "hash": "",
+                                                              "pathname": "/",
+                                                              "search": "",
+                                                              "state": undefined,
+                                                            },
+                                                            "push": [Function],
+                                                            "replace": [Function],
+                                                          }
+                                                        }
+                                                        onClose={[Function]}
+                                                      >
+                                                        <EuiFlexItem
+                                                          grow={false}
+                                                        >
+                                                          <div
+                                                            className="euiFlexItem euiFlexItem--flexGrowZero"
+                                                          >
+                                                            <EuiFlexGroup
+                                                              gutterSize="l"
+                                                            >
+                                                              <div
+                                                                className="euiFlexGroup euiFlexGroup--gutterLarge euiFlexGroup--directionRow euiFlexGroup--responsive"
+                                                              >
+                                                                <EuiFlexItem
+                                                                  key="0"
+                                                                >
+                                                                  <div
+                                                                    className="euiFlexItem"
+                                                                  >
+                                                                    <EuiCard
+                                                                      description="Test two search configurations with a single query. View side-by-side results to find the best performer."
+                                                                      icon={
+                                                                        <EuiIcon
+                                                                          size="xxl"
+                                                                          type="beaker"
+                                                                        />
+                                                                      }
+                                                                      isDisabled={false}
+                                                                      onClick={[Function]}
+                                                                      title="Single Query Comparison"
+                                                                    >
+                                                                      <EuiPanel
+                                                                        className="euiCard euiCard--centerAligned euiCard--isClickable euiCard--hasIcon"
+                                                                        element="div"
+                                                                        hasShadow={true}
+                                                                        onClick={[Function]}
+                                                                      >
+                                                                        <div
+                                                                          className="euiPanel euiPanel--paddingMedium euiPanel--borderRadiusMedium euiPanel--plain euiPanel--hasShadow euiPanel--isClickable euiCard euiCard--centerAligned euiCard--isClickable euiCard--hasIcon"
+                                                                          onClick={[Function]}
+                                                                        >
+                                                                          <div
+                                                                            className="euiCard__top"
+                                                                          >
+                                                                            <EuiIcon
+                                                                              className="euiCard__icon"
+                                                                              size="xxl"
+                                                                              type="beaker"
+                                                                            >
+                                                                              <EuiIconBeaker
+                                                                                aria-hidden={true}
+                                                                                className="euiIcon euiIcon--xxLarge euiIcon-isLoading euiCard__icon"
+                                                                                focusable="false"
+                                                                                role="img"
+                                                                                style={null}
+                                                                              >
+                                                                                <svg
+                                                                                  aria-hidden={true}
+                                                                                  className="euiIcon euiIcon--xxLarge euiIcon-isLoading euiCard__icon"
+                                                                                  focusable="false"
+                                                                                  height={16}
+                                                                                  role="img"
+                                                                                  style={null}
+                                                                                  viewBox="0 0 16 16"
+                                                                                  width={16}
+                                                                                  xmlns="http://www.w3.org/2000/svg"
+                                                                                >
+                                                                                  <path
+                                                                                    d="M5.277 10.088c.02.014.04.03.057.047.582.55 1.134.812 1.666.812.586 0 1.84-.293 3.713-.88L9 6.212V2H7v4.212l-1.723 3.876Zm-.438.987L3.539 14h8.922l-1.32-2.969C9.096 11.677 7.733 12 7 12c-.74 0-1.463-.315-2.161-.925ZM6 2H5V1h6v1h-1v4l3.375 7.594A1 1 0 0 1 12.461 15H3.54a1 1 0 0 1-.914-1.406L6 6V2Z"
+                                                                                  />
+                                                                                </svg>
+                                                                              </EuiIconBeaker>
+                                                                            </EuiIcon>
+                                                                          </div>
+                                                                          <div
+                                                                            className="euiCard__content"
+                                                                          >
+                                                                            <EuiTitle
+                                                                              className="euiCard__title"
+                                                                              id="random_html_idTitle"
+                                                                              size="s"
+                                                                            >
+                                                                              <span
+                                                                                className="euiTitle euiTitle--small euiCard__title"
+                                                                                id="random_html_idTitle"
+                                                                              >
+                                                                                <button
+                                                                                  aria-describedby=" random_html_idDescription"
+                                                                                  className="euiCard__titleButton"
+                                                                                  disabled={false}
+                                                                                  onClick={[Function]}
+                                                                                >
+                                                                                  Single Query Comparison
+                                                                                </button>
+                                                                              </span>
+                                                                            </EuiTitle>
+                                                                            <EuiText
+                                                                              className="euiCard__description"
+                                                                              id="random_html_idDescription"
+                                                                              size="s"
+                                                                            >
+                                                                              <div
+                                                                                className="euiText euiText--small euiCard__description"
+                                                                                id="random_html_idDescription"
+                                                                              >
+                                                                                <p>
+                                                                                  Test two search configurations with a single query. View side-by-side results to find the best performer.
+                                                                                </p>
+                                                                              </div>
+                                                                            </EuiText>
+                                                                          </div>
+                                                                        </div>
+                                                                      </EuiPanel>
+                                                                    </EuiCard>
+                                                                  </div>
+                                                                </EuiFlexItem>
+                                                                <EuiFlexItem
+                                                                  key="1"
+                                                                >
+                                                                  <div
+                                                                    className="euiFlexItem"
+                                                                  >
+                                                                    <EuiCard
+                                                                      description="Perform a comparison across an entire set of queries. Determine differences across your complete use case."
+                                                                      icon={
+                                                                        <EuiIcon
+                                                                          size="xxl"
+                                                                          type="beaker"
+                                                                        />
+                                                                      }
+                                                                      isDisabled={false}
+                                                                      onClick={[Function]}
+                                                                      title="Query Set Comparison"
+                                                                    >
+                                                                      <EuiPanel
+                                                                        className="euiCard euiCard--centerAligned euiCard--isClickable euiCard--hasIcon"
+                                                                        element="div"
+                                                                        hasShadow={true}
+                                                                        onClick={[Function]}
+                                                                      >
+                                                                        <div
+                                                                          className="euiPanel euiPanel--paddingMedium euiPanel--borderRadiusMedium euiPanel--plain euiPanel--hasShadow euiPanel--isClickable euiCard euiCard--centerAligned euiCard--isClickable euiCard--hasIcon"
+                                                                          onClick={[Function]}
+                                                                        >
+                                                                          <div
+                                                                            className="euiCard__top"
+                                                                          >
+                                                                            <EuiIcon
+                                                                              className="euiCard__icon"
+                                                                              size="xxl"
+                                                                              type="beaker"
+                                                                            >
+                                                                              <EuiIconBeaker
+                                                                                aria-hidden={true}
+                                                                                className="euiIcon euiIcon--xxLarge euiIcon-isLoading euiCard__icon"
+                                                                                focusable="false"
+                                                                                role="img"
+                                                                                style={null}
+                                                                              >
+                                                                                <svg
+                                                                                  aria-hidden={true}
+                                                                                  className="euiIcon euiIcon--xxLarge euiIcon-isLoading euiCard__icon"
+                                                                                  focusable="false"
+                                                                                  height={16}
+                                                                                  role="img"
+                                                                                  style={null}
+                                                                                  viewBox="0 0 16 16"
+                                                                                  width={16}
+                                                                                  xmlns="http://www.w3.org/2000/svg"
+                                                                                >
+                                                                                  <path
+                                                                                    d="M5.277 10.088c.02.014.04.03.057.047.582.55 1.134.812 1.666.812.586 0 1.84-.293 3.713-.88L9 6.212V2H7v4.212l-1.723 3.876Zm-.438.987L3.539 14h8.922l-1.32-2.969C9.096 11.677 7.733 12 7 12c-.74 0-1.463-.315-2.161-.925ZM6 2H5V1h6v1h-1v4l3.375 7.594A1 1 0 0 1 12.461 15H3.54a1 1 0 0 1-.914-1.406L6 6V2Z"
+                                                                                  />
+                                                                                </svg>
+                                                                              </EuiIconBeaker>
+                                                                            </EuiIcon>
+                                                                          </div>
+                                                                          <div
+                                                                            className="euiCard__content"
+                                                                          >
+                                                                            <EuiTitle
+                                                                              className="euiCard__title"
+                                                                              id="random_html_idTitle"
+                                                                              size="s"
+                                                                            >
+                                                                              <span
+                                                                                className="euiTitle euiTitle--small euiCard__title"
+                                                                                id="random_html_idTitle"
+                                                                              >
+                                                                                <button
+                                                                                  aria-describedby=" random_html_idDescription"
+                                                                                  className="euiCard__titleButton"
+                                                                                  disabled={false}
+                                                                                  onClick={[Function]}
+                                                                                >
+                                                                                  Query Set Comparison
+                                                                                </button>
+                                                                              </span>
+                                                                            </EuiTitle>
+                                                                            <EuiText
+                                                                              className="euiCard__description"
+                                                                              id="random_html_idDescription"
+                                                                              size="s"
+                                                                            >
+                                                                              <div
+                                                                                className="euiText euiText--small euiCard__description"
+                                                                                id="random_html_idDescription"
+                                                                              >
+                                                                                <p>
+                                                                                  Perform a comparison across an entire set of queries. Determine differences across your complete use case.
+                                                                                </p>
+                                                                              </div>
+                                                                            </EuiText>
+                                                                          </div>
+                                                                        </div>
+                                                                      </EuiPanel>
+                                                                    </EuiCard>
+                                                                  </div>
+                                                                </EuiFlexItem>
+                                                                <EuiFlexItem
+                                                                  key="2"
+                                                                >
+                                                                  <div
+                                                                    className="euiFlexItem"
+                                                                  >
+                                                                    <EuiCard
+                                                                      description="Calculate search quality metrics to evaluate specific search configuration."
+                                                                      icon={
+                                                                        <EuiIcon
+                                                                          size="xxl"
+                                                                          type="beaker"
+                                                                        />
+                                                                      }
+                                                                      isDisabled={false}
+                                                                      onClick={[Function]}
+                                                                      title="Search Evaluation"
+                                                                    >
+                                                                      <EuiPanel
+                                                                        className="euiCard euiCard--centerAligned euiCard--isClickable euiCard--hasIcon"
+                                                                        element="div"
+                                                                        hasShadow={true}
+                                                                        onClick={[Function]}
+                                                                      >
+                                                                        <div
+                                                                          className="euiPanel euiPanel--paddingMedium euiPanel--borderRadiusMedium euiPanel--plain euiPanel--hasShadow euiPanel--isClickable euiCard euiCard--centerAligned euiCard--isClickable euiCard--hasIcon"
+                                                                          onClick={[Function]}
+                                                                        >
+                                                                          <div
+                                                                            className="euiCard__top"
+                                                                          >
+                                                                            <EuiIcon
+                                                                              className="euiCard__icon"
+                                                                              size="xxl"
+                                                                              type="beaker"
+                                                                            >
+                                                                              <EuiIconBeaker
+                                                                                aria-hidden={true}
+                                                                                className="euiIcon euiIcon--xxLarge euiIcon-isLoading euiCard__icon"
+                                                                                focusable="false"
+                                                                                role="img"
+                                                                                style={null}
+                                                                              >
+                                                                                <svg
+                                                                                  aria-hidden={true}
+                                                                                  className="euiIcon euiIcon--xxLarge euiIcon-isLoading euiCard__icon"
+                                                                                  focusable="false"
+                                                                                  height={16}
+                                                                                  role="img"
+                                                                                  style={null}
+                                                                                  viewBox="0 0 16 16"
+                                                                                  width={16}
+                                                                                  xmlns="http://www.w3.org/2000/svg"
+                                                                                >
+                                                                                  <path
+                                                                                    d="M5.277 10.088c.02.014.04.03.057.047.582.55 1.134.812 1.666.812.586 0 1.84-.293 3.713-.88L9 6.212V2H7v4.212l-1.723 3.876Zm-.438.987L3.539 14h8.922l-1.32-2.969C9.096 11.677 7.733 12 7 12c-.74 0-1.463-.315-2.161-.925ZM6 2H5V1h6v1h-1v4l3.375 7.594A1 1 0 0 1 12.461 15H3.54a1 1 0 0 1-.914-1.406L6 6V2Z"
+                                                                                  />
+                                                                                </svg>
+                                                                              </EuiIconBeaker>
+                                                                            </EuiIcon>
+                                                                          </div>
+                                                                          <div
+                                                                            className="euiCard__content"
+                                                                          >
+                                                                            <EuiTitle
+                                                                              className="euiCard__title"
+                                                                              id="random_html_idTitle"
+                                                                              size="s"
+                                                                            >
+                                                                              <span
+                                                                                className="euiTitle euiTitle--small euiCard__title"
+                                                                                id="random_html_idTitle"
+                                                                              >
+                                                                                <button
+                                                                                  aria-describedby=" random_html_idDescription"
+                                                                                  className="euiCard__titleButton"
+                                                                                  disabled={false}
+                                                                                  onClick={[Function]}
+                                                                                >
+                                                                                  Search Evaluation
+                                                                                </button>
+                                                                              </span>
+                                                                            </EuiTitle>
+                                                                            <EuiText
+                                                                              className="euiCard__description"
+                                                                              id="random_html_idDescription"
+                                                                              size="s"
+                                                                            >
+                                                                              <div
+                                                                                className="euiText euiText--small euiCard__description"
+                                                                                id="random_html_idDescription"
+                                                                              >
+                                                                                <p>
+                                                                                  Calculate search quality metrics to evaluate specific search configuration.
+                                                                                </p>
+                                                                              </div>
+                                                                            </EuiText>
+                                                                          </div>
+                                                                        </div>
+                                                                      </EuiPanel>
+                                                                    </EuiCard>
+                                                                  </div>
+                                                                </EuiFlexItem>
+                                                                <EuiFlexItem
+                                                                  key="3"
+                                                                >
+                                                                  <div
+                                                                    className="euiFlexItem"
+                                                                  >
+                                                                    <EuiCard
+                                                                      description="Find the best balance between neural and lexical hybrid search configuration."
+                                                                      icon={
+                                                                        <EuiIcon
+                                                                          size="xxl"
+                                                                          type="beaker"
+                                                                        />
+                                                                      }
+                                                                      isDisabled={false}
+                                                                      onClick={[Function]}
+                                                                      title="Hybrid Search Optimizer"
+                                                                    >
+                                                                      <EuiPanel
+                                                                        className="euiCard euiCard--centerAligned euiCard--isClickable euiCard--hasIcon"
+                                                                        element="div"
+                                                                        hasShadow={true}
+                                                                        onClick={[Function]}
+                                                                      >
+                                                                        <div
+                                                                          className="euiPanel euiPanel--paddingMedium euiPanel--borderRadiusMedium euiPanel--plain euiPanel--hasShadow euiPanel--isClickable euiCard euiCard--centerAligned euiCard--isClickable euiCard--hasIcon"
+                                                                          onClick={[Function]}
+                                                                        >
+                                                                          <div
+                                                                            className="euiCard__top"
+                                                                          >
+                                                                            <EuiIcon
+                                                                              className="euiCard__icon"
+                                                                              size="xxl"
+                                                                              type="beaker"
+                                                                            >
+                                                                              <EuiIconBeaker
+                                                                                aria-hidden={true}
+                                                                                className="euiIcon euiIcon--xxLarge euiIcon-isLoading euiCard__icon"
+                                                                                focusable="false"
+                                                                                role="img"
+                                                                                style={null}
+                                                                              >
+                                                                                <svg
+                                                                                  aria-hidden={true}
+                                                                                  className="euiIcon euiIcon--xxLarge euiIcon-isLoading euiCard__icon"
+                                                                                  focusable="false"
+                                                                                  height={16}
+                                                                                  role="img"
+                                                                                  style={null}
+                                                                                  viewBox="0 0 16 16"
+                                                                                  width={16}
+                                                                                  xmlns="http://www.w3.org/2000/svg"
+                                                                                >
+                                                                                  <path
+                                                                                    d="M5.277 10.088c.02.014.04.03.057.047.582.55 1.134.812 1.666.812.586 0 1.84-.293 3.713-.88L9 6.212V2H7v4.212l-1.723 3.876Zm-.438.987L3.539 14h8.922l-1.32-2.969C9.096 11.677 7.733 12 7 12c-.74 0-1.463-.315-2.161-.925ZM6 2H5V1h6v1h-1v4l3.375 7.594A1 1 0 0 1 12.461 15H3.54a1 1 0 0 1-.914-1.406L6 6V2Z"
+                                                                                  />
+                                                                                </svg>
+                                                                              </EuiIconBeaker>
+                                                                            </EuiIcon>
+                                                                          </div>
+                                                                          <div
+                                                                            className="euiCard__content"
+                                                                          >
+                                                                            <EuiTitle
+                                                                              className="euiCard__title"
+                                                                              id="random_html_idTitle"
+                                                                              size="s"
+                                                                            >
+                                                                              <span
+                                                                                className="euiTitle euiTitle--small euiCard__title"
+                                                                                id="random_html_idTitle"
+                                                                              >
+                                                                                <button
+                                                                                  aria-describedby=" random_html_idDescription"
+                                                                                  className="euiCard__titleButton"
+                                                                                  disabled={false}
+                                                                                  onClick={[Function]}
+                                                                                >
+                                                                                  Hybrid Search Optimizer
+                                                                                </button>
+                                                                              </span>
+                                                                            </EuiTitle>
+                                                                            <EuiText
+                                                                              className="euiCard__description"
+                                                                              id="random_html_idDescription"
+                                                                              size="s"
+                                                                            >
+                                                                              <div
+                                                                                className="euiText euiText--small euiCard__description"
+                                                                                id="random_html_idDescription"
+                                                                              >
+                                                                                <p>
+                                                                                  Find the best balance between neural and lexical hybrid search configuration.
+                                                                                </p>
+                                                                              </div>
+                                                                            </EuiText>
+                                                                          </div>
+                                                                        </div>
+                                                                      </EuiPanel>
+                                                                    </EuiCard>
+                                                                  </div>
+                                                                </EuiFlexItem>
+                                                              </div>
+                                                            </EuiFlexGroup>
+                                                          </div>
+                                                        </EuiFlexItem>
+                                                      </TemplateCards>
+                                                      <EuiSpacer
+                                                        size="m"
+                                                      >
+                                                        <div
+                                                          className="euiSpacer euiSpacer--m"
+                                                        />
+                                                      </EuiSpacer>
+                                                      <EuiFlexItem>
+                                                        <div
+                                                          className="euiFlexItem"
+                                                        >
+                                                          <EuiText>
+                                                            <div
+                                                              className="euiText euiText--medium"
+                                                            >
+                                                              Click on an experiment id to view details.
+                                                            </div>
+                                                          </EuiText>
+                                                          <TableListView
+                                                            entityName="Experiment"
+                                                            entityNamePlural="Experiments"
+                                                            findItems={[Function]}
+                                                            headingId="experimentListingHeading"
+                                                            key="0"
+                                                            loading={false}
+                                                            pagination={
+                                                              Object {
+                                                                "initialPageSize": 10,
+                                                                "pageSizeOptions": Array [
+                                                                  5,
+                                                                  10,
+                                                                  20,
+                                                                  50,
+                                                                ],
+                                                              }
+                                                            }
+                                                            search={
+                                                              Object {
+                                                                "box": Object {
+                                                                  "incremental": true,
+                                                                  "placeholder": "Search experiments...",
+                                                                  "schema": true,
+                                                                },
+                                                              }
+                                                            }
+                                                            sorting={
+                                                              Object {
+                                                                "sort": Object {
+                                                                  "direction": "desc",
+                                                                  "field": "timestamp",
+                                                                },
+                                                              }
+                                                            }
+                                                            tableColumns={
+                                                              Array [
+                                                                Object {
+                                                                  "dataType": "string",
+                                                                  "field": "id",
+                                                                  "name": "ID",
+                                                                  "render": [Function],
+                                                                  "sortable": true,
+                                                                },
+                                                                Object {
+                                                                  "dataType": "string",
+                                                                  "field": "type",
+                                                                  "name": "Experiment Type",
+                                                                  "render": [Function],
+                                                                  "sortable": true,
+                                                                },
+                                                                Object {
+                                                                  "dataType": "string",
+                                                                  "field": "status",
+                                                                  "name": "Status",
+                                                                  "sortable": true,
+                                                                },
+                                                                Object {
+                                                                  "field": "size",
+                                                                  "name": "Queries Run",
+                                                                  "render": [Function],
+                                                                  "width": "20%",
+                                                                },
+                                                                Object {
+                                                                  "dataType": "string",
+                                                                  "field": "timestamp",
+                                                                  "name": "Timestamp",
+                                                                  "render": [Function],
+                                                                  "sortable": true,
+                                                                },
+                                                                Object {
+                                                                  "field": "id",
+                                                                  "name": "Actions",
+                                                                  "render": [Function],
+                                                                  "width": "10%",
+                                                                },
+                                                              ]
+                                                            }
+                                                          >
+                                                            <EuiPage
+                                                              className="itemListing__page"
+                                                              data-test-subj="ExperimentLandingPage"
+                                                            >
+                                                              <div
+                                                                className="euiPage euiPage--paddingMedium euiPage--grow itemListing__page"
+                                                                data-test-subj="ExperimentLandingPage"
+                                                              >
+                                                                <EuiPageBody
+                                                                  component="main"
+                                                                >
+                                                                  <main
+                                                                    className="euiPageBody euiPageBody--borderRadiusNone"
+                                                                  />
+                                                                </EuiPageBody>
+                                                              </div>
+                                                            </EuiPage>
+                                                          </TableListView>
+                                                        </div>
+                                                      </EuiFlexItem>
+                                                    </div>
+                                                  </EuiPageContentBody>
+                                                </div>
+                                              </EuiPanel>
+                                            </EuiPageContent>
+                                          </div>
+                                        </EuiPageBody>
+                                      </div>
+                                    </EuiPage>
+                                  </EuiPageTemplate>
+                                </ExperimentListing>
+                              </withRouter(ExperimentListing)>
+                            </Route>
+                          </Switch>
+                        </div>
+                      </EuiPageBody>
+                    </div>
+                  </EuiPage>
+                </SearchRelevancePage>
+              </withRouter(SearchRelevancePage)>
+            </SearchRelevanceContextProvider>
+          </PseudoLocaleWrapper>
+        </IntlProvider>
+      </I18nProvider>
+    </Router>
+  </HashRouter>
+</SearchRelevanceApp>
+`;

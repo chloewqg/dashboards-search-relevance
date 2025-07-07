@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState, useCallback } from 'react';
 import {
   ChromeBreadcrumb,
   CoreStart,
@@ -46,6 +46,7 @@ interface QueryExplorerProps {
   dataSourceManagement: DataSourceManagementPluginSetup;
   setActionMenu: (menuMount: MountPoint | undefined) => void;
   application: CoreStart['application'];
+  savedConfiguration: string;
 }
 export const Home = ({
   parentBreadCrumbs,
@@ -60,9 +61,20 @@ export const Home = ({
   dataSourceManagement,
   setActionMenu,
   application,
+  savedConfiguration,
 }: QueryExplorerProps) => {
   const {
     showFlyout,
+    setDocumentsIndexes,
+    allowList,
+    setAllowList,
+    setSelectedIndex1,
+    setQuery1,
+    setPipeline1,
+    setSelectedIndex2,
+    setQuery2,
+    setPipeline2,
+    setSearchValue,
     documentsIndexes1,
     documentsIndexes2,
     setDocumentsIndexes1,
@@ -73,11 +85,96 @@ export const Home = ({
     setFetchedPipelines2,
     setDataSource1,
     setDataSource2,
+    setSavedConfiguration,
+    pipelines,
+    setPipelines,
   } = useSearchRelevanceContext();
 
   useEffect(() => {
     setBreadcrumbs([...parentBreadCrumbs]);
   }, [setBreadcrumbs, parentBreadCrumbs]);
+  useEffect(() => {
+    setSavedConfiguration(savedConfiguration);
+    http.get(ServiceEndpoints.GetIndexes).then((res: DocumentsIndex[]) => {
+      setDocumentsIndexes(res);
+    });
+    http
+      .post(ServiceEndpoints.GetDocument, {
+        body: JSON.stringify({
+          index: 'configurations',
+          docID: 'allowlist_indices',
+        }),
+      })
+      .then((res) => {
+        console.log(res._source.indices);
+        setAllowList(res._source.indices);
+      });
+    // Get pipelines using console API
+    http
+      .post('/api/console/proxy', {
+        query: {
+          path: '/_search/pipeline',
+          method: 'GET',
+        },
+        body: {},
+        prependBasePath: true,
+        asResponse: true,
+      })
+      .then((res) => {
+        setPipelines(res?.body);
+      });
+  }, [http, setDocumentsIndexes, setPipelines]);
+
+  const loadSavedConfiguration = useCallback(async () => {
+    if (!savedConfiguration) return;
+    
+    try {
+      const res = await http.post(ServiceEndpoints.GetSavedConfiguration, {
+        body: JSON.stringify({
+          query: {
+            match: {
+              title: savedConfiguration,
+            },
+          },
+        }),
+      });
+      
+      if (res?.hits?.hits?.length > 0) {
+        const source = res?.hits?.hits[0]?._source?.configuration;
+        
+        const updateQueryConfig = (queryConfig: any, setters: any) => {
+          if (!queryConfig) return;
+          
+          const { dsl_query, index, search_pipeline } = queryConfig;
+          if (dsl_query) setters.setQuery(dsl_query);
+          if (index) setters.setSelectedIndex(index);
+          if (search_pipeline) setters.setPipeline(search_pipeline);
+        };
+        
+        updateQueryConfig(source?.query1, {
+          setQuery: setQuery1,
+          setSelectedIndex: setSelectedIndex1,
+          setPipeline: setPipeline1,
+        });
+        
+        updateQueryConfig(source?.query2, {
+          setQuery: setQuery2,
+          setSelectedIndex: setSelectedIndex2,
+          setPipeline: setPipeline2,
+        });
+        
+        if (source?.search) {
+          setSearchValue(source?.search);
+        }
+      }
+    } catch (error) {
+      console.error('Failed to load saved configuration:', error);
+    }
+  }, [savedConfiguration, http, setQuery1, setQuery2, setSelectedIndex1, setSelectedIndex2, setPipeline1, setPipeline2, setSearchValue]);
+
+  useEffect(() => {
+    loadSavedConfiguration();
+  }, [loadSavedConfiguration]);
   const [dataSourceOptions, setDataSourceOptions] = useState<DataSourceOption[]>([]);
   const [shouldShowCreateIndex, setShouldShowCreateIndex] = useState(false);
   const fetchIndexes = (dataConnectionId: string, queryNumber: string) => {
